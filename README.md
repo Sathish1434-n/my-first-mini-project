@@ -45,4 +45,4 @@ void loop() {
     digitalWrite(BUZZER_PIN, LOW);
   }
   
-  delay(5000); // Wait 5 seconds before next reading
+  delay(5000); // 
