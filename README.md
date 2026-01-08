@@ -1,4 +1,3 @@
-# my-first-mini-project
 #include <Wire.h>
 #include <Adafruit_MLX90614.h>
 
@@ -45,4 +44,5 @@ void loop() {
     digitalWrite(BUZZER_PIN, LOW);
   }
   
-  delay(5000); // 
+  delay(5000); // wait 5 seconds before reading
+  }
