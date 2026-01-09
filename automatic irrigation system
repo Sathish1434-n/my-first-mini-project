@@ -1,0 +1,17 @@
+automatic-irrigation-project-with-Arduino-uno
+project detail's and code
+
+SOFTWARE CODING
+
+int relayPin = 13; int sensorPin = 8; int val;
+
+void setup() { pinMode(relayPin, OUTPUT); pinMode(sensorPin, INPUT); }
+
+void loop() { val = digitalRead(sensorPin);
+
+// If sensor is in WATER (wet) → val = LOW → we want RELAY OFF // If sensor is in AIR (dry) → val = HIGH → we want RELAY ON
+
+if (val == HIGH) { // Dry soil → turn motor ON digitalWrite(relayPin, HIGH); // or LOW, depending on relay type (see below) } else { // Wet soil → turn motor OFF digitalWrite(relayPin, LOW); // or HIGH }
+
+delay(400); }
+
